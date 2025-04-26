@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avaliação de Satisfação - CEOP</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#0d6efd">
   <style>
     :root {
       --primary-color: #3b82f6;
@@ -211,13 +209,32 @@
       to { transform: rotate(360deg); }
     }
     
+    /* Media queries para dispositivos móveis */
     @media (max-width: 640px) {
       .stars {
         justify-content: center;
       }
       
       .star {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+        padding: 0 2px;
+      }
+      
+      .star-value {
+        font-size: 1.2rem;
+        min-width: 1.5rem;
+      }
+      
+      .rating-label {
+        font-size: 1rem;
+      }
+      
+      .container {
+        padding: 1rem 0.75rem;
+      }
+      
+      .card {
+        padding: 1.5rem 1rem;
       }
     }
   </style>
@@ -470,4 +487,4 @@
     });
   </script>
 </body>
-</html>
+</html> 
