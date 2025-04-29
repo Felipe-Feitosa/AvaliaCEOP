@@ -253,9 +253,8 @@
           <label for="recepcao" class="form-label">Selecione o setor que deseja avaliar*</label>
           <select id="recepcao" name="recepcao" class="form-control" required>
             <option value="">Selecione...</option>
-            <option value="Recepção 1º andar">Recepção 1º andar</option>
+            <option value="Recepção">Recepção</option>
             <option value="Orientação cirúrgica">Orientação cirúrgica</option>
-            <option value="Recepção do bloco cirúrgico">Recepção do bloco cirúrgico</option>
           </select>
           <div id="recepcaoError" class="error-message">Por favor, selecione um setor.</div>
         </div>
@@ -457,7 +456,7 @@
         document.getElementById('recomendacaoHidden').value = recomendacaoRating.toString();
         
         // Formar URL com parâmetros
-        let url = 'https://script.google.com/macros/s/AKfycbzo0G0ivrmuSUtj1GIQxpe0vraq0cgJaZFMIAKqtlx7ax_AEMzEXZjdQ0lkcSMIO2zN/exec';
+        let url = 'https://script.google.com/macros/s/AKfycbx6ryqkTcCWS-0I4rfPSofNaF0BlerhKzva9T1XmQ6aHCOiY9VfT6UvqvXbAsD3wC96/exec';
         url += '?recepcao=' + encodeURIComponent(recepcao.value);
         url += '&atendimento=' + encodeURIComponent(atendimentoRating.toString());
         url += '&recomendacao=' + encodeURIComponent(recomendacaoRating.toString());
